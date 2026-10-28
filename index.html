@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <main class="container">
@@ -20,7 +20,30 @@
         </svg>
       </div>
       <h1>অ্যাপ্লিকেশন ডাউনলোড করুন</h1>
-      <p class="subtitle">নিচের বাটনে ক্লিক করে সরাসরি অ্যাপটি ডাউনলোড করে নিন।</p>
+      <p class="subtitle">নিচের বাটনে ক্লিক করে অ্যাপটি ডাউনলোড করুন এবং দেওয়া ইউজারনেম ও পাসওয়ার্ড ব্যবহার করে লগইন করুন।</p>
+
+      <!-- লগইন তথ্য (Username & Password) -->
+      <div class="credentials-box">
+        <div class="cred-row">
+          <div class="cred-info">
+            <span class="cred-label">Username</span>
+            <code class="cred-value" id="usernameVal">FTP@123456789</code>
+          </div>
+          <button type="button" class="copy-btn" data-copy="FTP@123456789" aria-label="Copy Username">
+            Copy
+          </button>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-row">
+          <div class="cred-info">
+            <span class="cred-label">Password</span>
+            <code class="cred-value" id="passwordVal">FTP@123456789</code>
+          </div>
+          <button type="button" class="copy-btn" data-copy="FTP@123456789" aria-label="Copy Password">
+            Copy
+          </button>
+        </div>
+      </div>
       
       <!-- অ্যাপ ফাইলের নাম: app.apk -->
       <a href="./app.apk" download="app.apk" class="download-btn" id="downloadBtn">
